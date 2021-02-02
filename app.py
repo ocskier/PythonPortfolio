@@ -5,11 +5,10 @@ app = Flask(__name__, template_folder='templates');
 
 @app.route('/')
 def serveHomePage(): 
-    html = open(os.path.join(os.path.dirname(__file__), './templates/index.html'),mode='r').read()
-    print(html)
-    return html
+    return render_template('index.html')
 
 @app.route('/about')
 def serveAboutPage(): 
-    return 'This is the about page!'
+    return render_template('about.html', name='Jon')
+
 
