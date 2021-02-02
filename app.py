@@ -9,3 +9,7 @@ def serveHomePage():
     print(html)
     return html
 
+@app.route('/about')
+def serveAboutPage(): 
+    return 'This is the about page!'
+
