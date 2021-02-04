@@ -1,22 +1,32 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <p>{{name}}'s About Page</p>
-        <script src="" async defer></script>
-    </body>
-</html>
+{% extends "layout.html" %}
+{% block about %}
+    <div class="uk-container uk-flex uk-flex-column uk-container-expand">
+        <div>
+            <div class="uk-card uk-card-default uk-card-body about-card">
+                <h4>Hi, My name is Jon...</h4>
+                <br>
+                <p>I was
+                    born in Louisiana and grew up in Richmond,
+                    Va until graduating from high school. I attended college at <a href="https://www.ncsu.edu" target="blank"
+                        style="color: moccasin;font-style: italic;font-weight: bolder;">NC State University</a> and graduated with
+                    dual B.S. degrees in
+                    Chemical Engineering and Wood and Paper Science.
+                </p>
+                <p> I attended
+                    graduate school where I obtained a Computer
+                    Programming Certificate and a Masters in Wood and Paper Science.
+                    My family life and personal interests have led me to spend the most recent years
+                    teaching myself hardware and software fundamentals utilizing freelance work. I spent
+                    sometime learning coding as well as building, repairing, and implementing personal
+                    computers.
+                </p>
+                <p> I am looking
+                    to gain full-time employment in software
+                    development at this juncture using skills learned up to and including the
+                    <a href="https://codingbootcamp.unc.edu/" target="blank"
+                        style="color: moccasin;font-style: italic;font-weight: bolder;">UNC Chapel Hill Coding Bootcamp</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
