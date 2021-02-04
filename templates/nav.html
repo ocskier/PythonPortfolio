@@ -1,5 +1,5 @@
 <div class="uk-position-relative">
-    <img src="static\ethan-robertson-134952-unsplash-min.jpg" alt="picture of a cool dude">
+    <img src={{url_for('static', filename='ethan-robertson-134952-unsplash-min.jpg')}} alt="picture of a cool dude">
     <div class="uk-position-top">
         <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
             <div class="uk-navbar-left">
@@ -7,7 +7,7 @@
                     <li class="uk-active">
                         <a href="/">
                             <div class="uk-width-auto">
-                                <img alt="round profile" class="uk-border-circle" width="40" height="40" src="static/V9H2222Jon.jpg">
+                                <img alt="round profile" class="uk-border-circle" width="40" height="40" src={{url_for('static', filename='V9H2222Jon.jpg')}}>
                             </div>
                         </a>
                     </li>
