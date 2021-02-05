@@ -5,15 +5,15 @@
             <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav">
                     <li class="uk-active">
-                        <a href="/">
+                        <a href={{url_for('serveHomePage')}}>
                             <div class="uk-width-auto">
                                 <img alt="round profile" class="uk-border-circle" width="40" height="40" src={{url_for('static', filename='V9H2222Jon.jpg')}}>
                             </div>
                         </a>
                     </li>
-                    <li><a href="/about">About</a></li>
+                    <li><a href={{url_for('serveAboutPage')}}>About</a></li>
                     <li>
-                        <a href="/portfolio">Portfolio</a>
+                        <a href={{url_for('servePortfolioPage')}}>Portfolio</a>
                     </li>
                 </ul>
             </div>
