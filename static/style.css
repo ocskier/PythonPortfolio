@@ -27,3 +27,7 @@ h1 {
 .port-card {
     min-height: 340px;
 }
+
+#bkgpic {
+    min-height: 100vh;
+}
